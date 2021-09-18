@@ -1,0 +1,30 @@
+.primary-btn { 
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background-color: transparent;
+
+    border: 1px solid $primary-color;
+    border-radius: 25px;
+
+    &:hover, &:focus {
+        background-color: $primary-color;
+    }
+}
+
+.primary-btn--darken {
+    color: $text-primary;
+
+    &:hover, &:focus {
+        color: #ffffff;
+        background-color: $primary-color;
+    }
+}

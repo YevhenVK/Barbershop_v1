@@ -1,0 +1,122 @@
+/* Услуги и цены */
+.price {
+    // Mobile
+    margin-right: auto;
+    margin-left: auto;
+    height: 826px;
+
+    background-color: #111319;
+    background-size: cover; 
+    background-repeat: no-repeat;
+
+    background-image: url('../images/price/price-mobile.png');
+     
+
+        @media screen and (min-device-pixel-ratio: 1.5),
+            screen and (min-resolution: 144dpi),
+            screen and (min-resolution: 1.5dppx) {
+                background-image: url('../images/price/price-mobile@2x.png');   
+    }
+
+// Tablet
+    @media screen and (min-width: 768px) {
+        height: 858px;
+
+        background-image: url('../images/price/price-tablet.png');
+         
+
+        @media screen and (min-device-pixel-ratio: 1.5),
+            screen and (min-resolution: 144dpi),
+            screen and (min-resolution: 1.5dppx) {
+                background-image: url('../images/price/price-tablet@2x.png');   
+        }
+    }
+
+// Desktop
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+        height: 718px;
+
+        background-image: url('../images/price/price-desktop.png');
+        background-size: 1280px 718px;  
+
+        @media screen and (min-device-pixel-ratio: 1.5),
+            screen and (min-resolution: 144dpi),
+            screen and (min-resolution: 1.5dppx) {
+                background-image: url('../images/price/price-desktop@2x.png');   
+        }
+    }
+}
+
+.price__headline {
+    color: rgba(157, 164, 189, 0.6); 
+}
+
+.price__headline::before {
+    background-color: rgba(157, 164, 189, 0.6);
+}
+
+.price__box {
+    margin-top: 44px;
+    margin-bottom: 50px;
+    padding: 30px;
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+        @media screen and (min-width: 768px) {
+            padding: 30px 40px;
+        }
+        
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            padding: 0;
+            background: none;
+        }
+}
+
+.price__list {
+    @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-wrap: wrap;
+    // width: 49%;
+    padding: 30px 40px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .price__list:nth-child(odd) {
+        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+
+    .price__list:nth-child(even) {
+        background:  linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
+}
+
+.price__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.price__item--last {
+    margin-bottom: 0;
+}
+
+.price__service, .price__cost {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.02em;
+
+    color: $text-secondary;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 1.66;
+    }
+}
+
+.price__button {
+   text-align: center;
+}

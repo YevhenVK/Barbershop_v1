@@ -1,0 +1,78 @@
+/* Наши мастера */
+.masters {
+    background-color: #F7F7F7;
+}
+
+.masters .container {
+    @media screen and (min-width: 768px) and (max-width: 1279px){
+        padding: 0 159px;
+    }
+}
+
+.masters__list {
+    margin-top: 44px;
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+    }  
+}
+
+.masters__item:not(:last-child) {
+    @media screen and (max-width: 1279px) {
+        margin-bottom: 64px;
+    }
+}
+
+.masters__content {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.masters__name {
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: 0.02em;
+
+    color: $text-primary;
+}
+
+.masters__position {
+    display: inline-block;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.357;
+    letter-spacing: 0.02em;
+    
+    color: $primary-color;
+}
+
+// Cсылки на соцсети
+
+.masters__social-box {
+    display: flex;
+    justify-content: center;   
+}
+
+.masters__link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.masters__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+     
+    fill: $text-primary;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.masters__link:hover, .masters__link:focus {
+    fill: $primary-color;
+}
